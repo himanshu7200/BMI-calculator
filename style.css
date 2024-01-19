@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    
+}
+
+body{
+    height: auto;
+    background-image: url(./BMI\ Mobile.png);
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url(./BMI\ Mobile.png);
+    background-size: 50% ;
+    background-position: center;
+    background-repeat: no-repeat;  
+    padding: 5%;
+    
+}
+
+
+
+
+.container{
+    height: auto;
+    width: 50%;
+    border: 5px solid black;
+    background: linear-gradient(0deg, rgba(221,211,208,1) 0%, rgba(197,221,221,1) 38%);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding-inline: 20px;
+    padding-block: 60px;    
+    row-gap: 30px;
+}
+
+
+.container h1{
+    font-size: 56px;
+    color: black;
+    letter-spacing: 10px;
+    font-family: 'Anton', sans-serif;
+    border: 5px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 10px;
+
+}
+.container h1 span{
+    color: red;
+}
+
+.container form{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 15px;
+    border: 5px solid red;
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+    padding-block: 20px;
+    padding-left: 10px;
+
+}
+
+form label{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+form label h3{
+    font-size: 19px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    
+}
+
+label h3 span{
+    color: red;
+}
+
+form label input{
+    height: auto;
+    width: auto;
+    padding-block: 10px;
+    padding-left: 10px;
+    padding-right: 3%;
+    border: 3px solid black;
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    
+}
+
+form input::placeholder{
+    font-size: 16px;
+}
+
+form button {
+    height: auto;
+    width: auto;
+    
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    /* white-space: nowrap; */
+   }
+   
+   button:after {
+    background-clip: padding-box;
+    background-color: red;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   button:main, button:focus {
+    user-select: auto;
+   }
+   
+   button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   button:disabled {
+    cursor: auto;
+   }
+   
+   button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   button:active {
+    padding-bottom: 10px;
+   }
+
+
+.result .h1R{
+    font-size: 19px ;
+    color: red;
+    letter-spacing: 3px;
+    padding: 3px;
+    border: none;
+    
+}
+
+#miniDiv{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+#miniDiv h3{
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#miniDiv{
+    font-size: 16px;
+}
+
+
+@media(max-width:768px){
+    body{
+        background-image: none;
+    }
+    
+    .main{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .container{
+        width: 90%;
+    }
+    
+}
